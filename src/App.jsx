@@ -3,6 +3,8 @@ import Serch from './Components/Serch'
 import FoodList from './Components/FoodList'
 import Nav from './Components/Nav'
 import styles from "./App.css"
+import Container from './Components/Container'
+import InnerContiner from './Components/InnerContiner'
 
 function App() {
   const [FoodData,setFoodData]=useState([])
@@ -10,7 +12,12 @@ function App() {
     <div className='App'>
       <Nav />
       <Serch FoodData={FoodData} setFoodData={setFoodData} />
-      <FoodList FoodData={FoodData} />
+      <Container>
+        <InnerContiner>
+           <FoodList FoodData={FoodData} />
+        </InnerContiner>
+        
+      </Container>    
     </div>
   )
 }
