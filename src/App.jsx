@@ -8,7 +8,7 @@ import FoodDetail from './Components/FoodDetail'
 
 function App() {
   const [FoodData,setFoodData]=useState([])
-  const [FoodId,setFoodId]=useState("")
+  const [FoodId,setFoodId]=useState("658615")
   return (
     <div className='App'>
       <Nav />
